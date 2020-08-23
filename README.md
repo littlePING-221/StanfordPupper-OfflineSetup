@@ -7,7 +7,7 @@
 
 由于有线网被限制为只能在内网与PC端进行ssh通信，所以与Internet的连接只能通过WiFi进行。有关WiFi的设置需要修改`RPI-Setup/applience/etc/wpa_supplicant/wpa_supplicant.conf` 文件以设置要连接的WiFi名和密码。
 
-第二个问题是，由于在国内的原因，通过树莓派直接下载GitHub上的源代码以及安装python库会经常会超时报错，所以无法直接使用[GitHub上的源码][2]进行安装。
+第二个问题是，由于在国内的原因，通过树莓派直接下载GitHub上的源代码以及安装python库会经常会超时报错，所以无法直接使用[GitHub上的源码](https://github.com/stanfordroboticsclub/StanfordQuadruped)进行安装。
 
 更换国内的软件镜像源可以解决树莓派安装软件的问题，但因为`piwheel`并没有国内镜像源，所以安装python第三方库仍然会报错。
 
