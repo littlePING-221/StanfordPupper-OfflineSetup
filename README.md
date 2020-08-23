@@ -5,7 +5,7 @@
 
 第一个问题是树莓派的网络连接问题。经过尝试，树莓派的有线网卡`eth0`的IP地址必须按照Stanford文档中所规定的设置为`10.0.0.X`网段，否则会导致PS4手柄无法遥控机器狗（具体原因待查明）。
 
-由于有线网被限制为只能在内网与PC端进行ssh通信，所以与Internet的连接只能通过WiFi进行。有关WiFi的设置需要修改[`RPI-Setup/applience/etc/wpa_supplicant/wpa_supplicant.conf`](https://github.com/littlePING-221/StanfordPupper-OfflineSetup/blob/master/RPI-Setup/appliance/etc/wpa_supplicant/wpa_supplicant.conf)文件以设置要连接的WiFi名和密码。
+由于有线网被限制为只能在内网与PC端进行ssh通信，所以与Internet的连接只能通过WiFi进行。有关WiFi的设置需要修改 [`RPI-Setup/applience/etc/wpa_supplicant/wpa_supplicant.conf`](https://github.com/littlePING-221/StanfordPupper-OfflineSetup/blob/master/RPI-Setup/appliance/etc/wpa_supplicant/wpa_supplicant.conf)文件以设置要连接的WiFi名和密码。
 
 第二个问题是，由于在国内的原因，通过树莓派直接下载GitHub上的源代码以及安装python库会经常会超时报错，所以无法直接使用[GitHub上的源码](https://github.com/stanfordroboticsclub/StanfordQuadruped)进行安装。
 
